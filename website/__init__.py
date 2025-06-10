@@ -1,6 +1,7 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from os import path
+import os
 
 db = SQLAlchemy()
 DB_NAME = "database.db"
@@ -25,10 +26,23 @@ def create_app():
         
     return app
 
+# def create_database(app):
+#     if not path.exists('website/' + DB_NAME):  
+#         with app.app_context():                
+#             db.create_all()
+#             print('Created Database!')
+
 def create_database(app):
-    if not path.exists('website/' + DB_NAME):  
-        with app.app_context():                
+    db_path = os.path.join('website', DB_NAME)
+    full_path = os.path.abspath(db_path)
+    print(f"Looking for database at: {full_path}")
+
+    if not path.exists(db_path):
+        print("Database does not exist. Creating...")
+        with app.app_context():
             db.create_all()
-            print('Created Database!')
+            print(f'✅ Created Database at: {full_path}')
+    else:
+        print("Database already exists.")
 
     
