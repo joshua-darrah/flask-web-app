@@ -1,13 +1,22 @@
-# Ignore SQLite database
+# Byte-compiled / cache
+__pycache__/
+__pycache__
+*.py[cod]
+
+# Instance folder (local SQLite DB and secrets)
+instance/
+instance
 *.db
 
-# Ignore Flask instance folder
-instance/
-
-# Ignore Python cache files
-__pycache__/
-*.pyc
-
-# Ignore environment files
+# Environment
 .env
+.venv/
+env/
 venv/
+
+# IDE files
+.vscode/
+.idea/
+
+# Deployment
+*.log

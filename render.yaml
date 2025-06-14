@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: flask-web-app
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn main:app"
+    envVars:
+      - key: SECRET_KEY
+        value: s5fF1d3v5E1v3E5QkWlPv6D
