@@ -20,3 +20,7 @@ venv/
 
 # Deployment
 *.log
+
+replacements.txt/
+
+replacements.txt
