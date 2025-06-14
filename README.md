@@ -45,7 +45,7 @@ A simple and secure note-taking web application built with **Flask**, allowing u
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/flask-notes-app.git
+git clone https://github.com/joshua-darrah/flask-web-app.git
 cd flask-notes-app
 ```
 
