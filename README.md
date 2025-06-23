@@ -17,7 +17,7 @@ A simple and secure note-taking web application built with **Flask**, allowing u
 
 ## 📁 Project Structure
 
-<!-- ``` -->
+```
 FLASK WEB APP/
 ├── instance/
 │   └── database.db
@@ -51,8 +51,6 @@ FLASK WEB APP/
 ├── replacements.txt
 └── requirements.txt
 ```
-
-<pre> <code> FLASK WEB APP/ ├── instance/ │ └── database.db ├── website/ │ └── __pycache__/ │ ├── __init__.cpython-313.pyc │ ├── auth.cpython-313.pyc │ ├── models.cpython-313.pyc │ └── views.cpython-313.pyc ├── static/ │ ├── css/ │ │ ├── index.css │ │ ├── login.css │ │ └── sign-up.css │ └── main.js ├── templates/ │ ├── base.html │ ├── home.html │ ├── login.html │ └── sign_up.html ├── __init__.py ├── auth.py ├── models.py ├── views.py ├── .env ├── .gitignore ├── main.py ├── Profile ├── README.md ├── render.yaml ├── replacements.txt └── requirements.txt </code> </pre>
 
 ---
 
