@@ -1,31 +1,41 @@
 {% extends "base.html" %}
 {% block title %}Sign Up{% endblock %}
 
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/sign-up.css') }}">
+{% endblock %}
+
 {%block content%}
-<form method="POST">
-    <h3 align="center">Sign Up</h3>
-    <div class="mb-3">
-        <label for="email" class="form-label">Email Address</label>
-        <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email address">
-    </div>
-    
-    <div class="mb-3">
-        <label for="firstName" class="form-label">First Name</label>
-        <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Enter your first name">
-    </div>
+<div class="login-container">
+    <form id="form" method="POST">
+        <h3 id="sign-up-text" align="center"><span id="black">Sign</span> <span id="orangered">Up</span></h3>
+        <div class="mb-3">
+            <label for="email" class="form-label" id="black">Email Address</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email address">
+        </div>
 
-    <div class="mb-3">
-        <label for="password1" class="form-label">Password</label>
-        <input type="password" class="form-control" id="password1" name="password1" placeholder="Enter your password">
-    </div>
+        <div class="mb-3">
+            <label for="firstName" class="form-label" id="black">First Name</label>
+            <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Enter your first name">
+        </div>
 
-    <div class="mb-3">
-        <label for="password2" class="form-label">Confirm Password</label>
-        <input type="password" class="form-control" id="password2" name="password2" placeholder="Confirm your password">
-    </div>
-    <br/>
-    <button type="submit" class="btn btn-primary">Submit</button>
+        <div class="mb-3">
+            <label for="password1" class="form-label" id="black">Password</label>
+            <input type="password" class="form-control" id="password1" name="password1"
+                placeholder="Enter your password">
+        </div>
 
+        <div class="mb-3">
+            <label for="password2" class="form-label" id="black">Confirm Password</label>
+            <input type="password" class="form-control" id="password2" name="password2"
+                placeholder="Confirm your password">
+        </div>
+        <!-- <br /> -->
+
+        <div class="button-container">
+        <button type="submit" class="btn btn-primary" id="submitBtn">Submit</button>
+        </div>
+</div>
 
 
 </form>

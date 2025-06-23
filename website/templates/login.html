@@ -1,20 +1,56 @@
 {% extends "base.html"%}
 {% block title %}Login{% endblock %}
 
-{%block content%}
-<form method="POST">
-    <h3 align="center">Login</h3>
-    <div class="mb-3">
-        <label for="email" class="form-label">Email Address</label>
-        <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email address">
-    </div>
-    
-    <div class="mb-3">
-        <label for="password" class="form-label">Password</label>
-        <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password">
-    </div>
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
+{% endblock %}
 
-    <br/>
-    <button type="submit" class="btn btn-primary">Login</button>
-</form>
+{%block content%}
+
+<div id="background">
+    <div><span></span></div>
+    <div><span></span></div>
+    <div><span></span></div>
+    <div><span></span></div>
+    <div><span></span></div>
+    <div><span></span></div>
+    <div><span></span></div>
+    <div><span></span></div>
+    <div><span></span></div>
+    <div><span></span></div>
+    <div><span></span></div>
+    <div><span></span></div>
+    <div><span></span></div>
+    <div><span></span></div>
+    <div><span></span></div>
+    <div><span></span></div>
+    <div><span></span></div>
+    <div><span></span></div>
+    <div><span></span></div>
+    <div><span></span></div>
+    <div><span></span></div>
+    <div><span></span></div>
+    <div><span></span></div>
+</div>
+
+<div class="login-container">
+    <form id="form" method="POST">
+        <h3 id="login-text">
+            <span class="orangered">Welcome</span> <span class="neon">Back</span>!!!
+        </h3>
+        <div class="mb-3">
+            <label for="email" class="form-label" id="text">Email Address</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email address">
+        </div>
+
+        <div class="mb-3">
+            <label for="password" class="form-label" id="text">Password</label>
+            <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password">
+        </div>
+
+        <!-- <br/> -->
+        <button type="submit" class="btn btn-primary" id="loginBtn">Login</button>
+    </form>
+</div>
+
 {%endblock%}
