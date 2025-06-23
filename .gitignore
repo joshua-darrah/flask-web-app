@@ -3,6 +3,10 @@ __pycache__/
 __pycache__
 *.py[cod]
 
+__pycache__/
+*.pyc
+
+
 # Instance folder (local SQLite DB and secrets)
 instance/
 instance
