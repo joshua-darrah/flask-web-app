@@ -59,3 +59,8 @@ def sign_up():
     
         
     return render_template("sign_up.html", user=current_user)
+
+@auth.route("/admin/stats")
+def stats():
+    total_users = User.query.count()
+    return f"Total Users: {total_users}"
