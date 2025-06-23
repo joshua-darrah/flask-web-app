@@ -18,24 +18,38 @@ A simple and secure note-taking web application built with **Flask**, allowing u
 ## 📁 Project Structure
 
 ```
-├── instance/  
-│   └── database.db             # SQLite database  
-├── website/  
-│   ├── static/                 # Static files (JS, CSS)  
-│   │   └── index.js  
-│   ├── templates/              # HTML templates  
-│   │   ├── base.html  
-│   │   ├── home.html  
-│   │   ├── login.html  
-│   │   └── sign_up.html  
-│   ├── __init__.py             # App factory  
-│   ├── auth.py                 # Authentication routes  
-│   ├── views.py                # Main views  
-│   └── models.py               # SQLAlchemy models  
-├── .env                        # Secret environment variables (NOT pushed)  
-├── .gitignore  
-├── main.py                     # App entry point  
-└── README.md
+FLASK WEB APP/
+├── instance/
+│   └── database.db
+├── website/
+│   └── __pycache__/
+│       ├── __init__.cpython-313.pyc
+│       ├── auth.cpython-313.pyc
+│       ├── models.cpython-313.pyc
+│       └── views.cpython-313.pyc
+├── static/
+│   └── css/
+│       ├── index.css
+│       ├── login.css
+│       └── sign-up.css
+│   └── main.js
+├── templates/
+│   ├── base.html
+│   ├── home.html
+│   ├── login.html
+│   └── sign_up.html
+├── __init__.py
+├── auth.py
+├── models.py
+├── views.py
+├── .env
+├── .gitignore
+├── main.py
+├── Profile
+├── README.md
+├── render.yaml
+├── replacements.txt
+└── requirements.txt
 ```
 
 ---
